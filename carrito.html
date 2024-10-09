@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Buenos días Café</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Sección del carrito de compras -->
+    <section id="shopping-cart">
+        <h1>Carrito de Compras</h1>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="https://img.freepik.com/foto-gratis/deliciosos-granos-cafe-taza_23-2150691429.jpg" alt="Café">
+                <div class="item-details">
+                    <h3>Café de Villa Rica</h3>
+                    <p>Precio: $10.00</p>
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    <button class="cta-button">Eliminar</button>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="https://img.freepik.com/foto-gratis/deliciosos-granos-cafe-taza_23-2150691429.jpg" alt="Café">
+                <div class="item-details">
+                    <h3>Café de Villa Rica</h3>
+                    <p>Precio: $10.00</p>
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    <button class="cta-button">Eliminar</button>
+                </div>
+            </div>
+            <!-- Repetir para otros productos en el carrito -->
+        </div>
+
+        <!-- Desglose de costos -->
+        <div class="cost-breakdown">
+            <p>Subtotal: S/ 10.00</p>
+            <p>IGV: S/ 1.00</p>
+            <p>Envío: S/ 5.00</p>
+            <h3>Total: S/ 16.00</h3>
+        </div>
+
+        <!-- Botón de proceder al pago -->
+        <button class="cta-button">Proceder al Pago</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Buenos días Café. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

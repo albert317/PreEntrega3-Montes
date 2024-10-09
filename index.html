@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Principal - Buenos días Café </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> ☕️ Buenos días Café</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalogo.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Encabezado -->
+    <section id="intro" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-sm-12">
+                    <h1>Descubre el sabor de café de especialidad</h1>
+                    <p>
+                        <em>Ofrecemos productos únicos y de calidad directamente desde
+                            Villa Rica, Perú.</em>
+                    </p>
+                    <a href="catalogo.html" class="btn btn-primary">Ver todos los productos</a>
+                    <br/>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <img src="assets/imagenes/principal.jpg"
+                        alt="Café de especialidad" class="img-fluid rounded" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de productos destacados -->
+    <section id="products" class="py-5 text-center">
+        <div class="container">
+            <h1>Productos Destacados</h1>
+            <div class="row mt-4 product-grid">
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <img src="assets/imagenes/cafe_sobre.webp" alt="Café" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Café de Villa Rica</h5>
+                            <p class="card-text">
+                                El mejor café cultivado en la región andina.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <img src="assets/imagenes/miel_frasco.webp" alt="Miel" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Miel Pura de Abeja</h5>
+                            <p class="card-text">
+                                Disfruta de la dulzura natural de nuestra miel pura.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <img src="assets/imagenes/barra_chocolate.jpg" alt="Chocolate" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Artesanal</h5>
+                            <p class="card-text">
+                                Sabores intensos y texturas suaves en cada bocado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="card">
+                        <img src="assets/imagenes/licor_cafe.jpg" alt="Licor de Café" class="card-img-top" />
+                        <div class="card-body">
+                            <h5 class="card-title">Licor de Café</h5>
+                            <p class="card-text">
+                                Una combinación perfecta de café y licor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <a href="catalogo.html" class="btn btn-primary">Ver Todos los Productos</a>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonials" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2>Lo que Nuestros Clientes Dicen</h2>
+            <div class="row mt-4 testimonial-grid justify-content-center"">
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <p class="mb-0">
+                            "El café de Villa Rica es inigualable. Nunca había probado algo
+                            tan delicioso."
+                        </p>
+                        <h4 class="mt-3">- María López</h4>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <p class="mb-0">
+                            "La miel es tan pura y natural. Definitivamente es un producto
+                            de calidad."
+                        </p>
+                        <h4 class="mt-3">- Juan Pérez</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Buenos días Café. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
