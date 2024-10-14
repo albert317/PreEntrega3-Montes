@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$font-roboto: 'Roboto', sans-serif;
+$primary-color: #45a049;
+$secondary-color: #583a00;
+
+
+.price{
+    font-family: $font-roboto;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: right;
+}
+
+.priceTotal{
+    font-family: $font-roboto;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: right;
+    color: $secondary-color;
+}
+#quantity{
+    font-family: $font-roboto;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: right;
+    color: $secondary-color;
+}
+
+.cart-item p{
+    font-family: $font-roboto;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: left;
+    color: $secondary-color;
+}
+
+#information{
+    padding-top: 20px;
+    font-family: $font-roboto;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+#shopping-cart h3{
+    font-family: $font-roboto;
+    font-weight: 7¿200;
+    font-size: 1.5em;
+    text-align: left;
+    color: $secondary-color;
+}

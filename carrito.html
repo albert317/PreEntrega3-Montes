@@ -2,67 +2,123 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras - Buenos días Café</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Principal - Buenos días Café </title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/my_shopping_cart.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
+
 
 <body>
 
     <!-- Barra de navegación -->
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="catalogo.html">Productos</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="carrito.html">Carrito</a>
-        <a href="contacto.html">Contacto</a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #48402A;">
+        <a class="navbar-brand" href="#"> ☕️ Buenos días Café</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item active"><a class="nav-link" href="catalogo.html">Productos</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Sección del carrito de compras -->
-    <section id="shopping-cart">
-        <h1>Carrito de Compras</h1>
-        <div class="cart-items">
-            <div class="cart-item">
-                <img src="https://img.freepik.com/foto-gratis/deliciosos-granos-cafe-taza_23-2150691429.jpg" alt="Café">
-                <div class="item-details">
-                    <h3>Café de Villa Rica</h3>
-                    <p>Precio: $10.00</p>
-                    <label for="quantity">Cantidad:</label>
-                    <input type="number" id="quantity" name="quantity" value="1" min="1">
-                    <button class="cta-button">Eliminar</button>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Columna de Información de Productos -->
+            <section id="information" class="container mt-4 col-md-4 col-sm-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Gracias</h2>
+                        <p>
+                            Gracias por tu compra. Puedes volver a nuestra tienda cuando quieras para descubrir más
+                            productos de alta calidad.
+                            Te enviaremos una notificación con evidencia cuando tu producto esté en camino. ¡Esperamos
+                            que disfrutes de tu compra!
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <!-- Sección del carrito de compras -->
+            <section id="shopping-cart" class=" col-md-8 col-sm-12">
+                <h1>Carrito de Compras</h1>
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img src="assets/imagenes/cafe_arabico.webp" alt="Café">
+                        <div class="item-details">
+                            <h3>Café de Villa Rica</h3>
+                            <p class="price-product">Precio: S/ 30.00</p>
+                            <label for="quantity" class="quantity">
+                                <p>Cantidad:</p>
+                            </label>
+                            <input type="number" id="quantity" name="quantity" value="1" min="1">
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </div>
+                    </div>
 
-            <div class="cart-item">
-                <img src="https://img.freepik.com/foto-gratis/deliciosos-granos-cafe-taza_23-2150691429.jpg" alt="Café">
-                <div class="item-details">
-                    <h3>Café de Villa Rica</h3>
-                    <p>Precio: $10.00</p>
-                    <label for="quantity">Cantidad:</label>
-                    <input type="number" id="quantity" name="quantity" value="1" min="1">
-                    <button class="cta-button">Eliminar</button>
+                    <div class="cart-item">
+                        <img src="assets/imagenes/miel_frasco.webp" alt="Café">
+                        <div class="item-details">
+                            <h3>Miel Pura de Abeja</h3>
+                            <p class="price-product">Precio: S/ 20.00</p>
+                            <label for="quantity">
+                                <p>Cantidad:</p>
+                            </label>
+                            <input type="number" id="quantity" name="quantity" value="2" min="1">
+                            <button class="btn btn-danger btn-sm">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- Repetir para otros productos en el carrito -->
                 </div>
-            </div>
-            <!-- Repetir para otros productos en el carrito -->
+
+                <!-- Desglose de costos -->
+                <div class="cost-breakdown">
+                    <p class="price">Subtotal: S/ 70.00</p>
+                    <p class="price">IGV: S/ 12.00</p>
+                    <p class="price">Envío: S/ 10.00</p>
+                    <p class="priceTotal">Total: S/ 92.00</p>
+                </div>
+
+                <!-- Botón de proceder al pago -->
+                <button class="btn btn-success btn-lg">Proceder al Pago</button>
+            </section>
         </div>
-
-        <!-- Desglose de costos -->
-        <div class="cost-breakdown">
-            <p>Subtotal: S/ 10.00</p>
-            <p>IGV: S/ 1.00</p>
-            <p>Envío: S/ 5.00</p>
-            <h3>Total: S/ 16.00</h3>
-        </div>
-
-        <!-- Botón de proceder al pago -->
-        <button class="cta-button">Proceder al Pago</button>
-    </section>
-
+    </div>
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Buenos días Café. Todos los derechos reservados.</p>
+    <footer class="navbar-expand-lg text-white py-4" style="background-color: #48402A;">
+        <div class="container text-center">
+            <p>&copy; 2024 Buenos días Café. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 
 </body>
 

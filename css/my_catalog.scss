@@ -38,3 +38,9 @@ h1 {
     font-style: italic;
     font-weight: 300;
 }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta el número de columnas automáticamente */
+    gap: 20px; /* Espacio entre los elementos del grid */
+  }
