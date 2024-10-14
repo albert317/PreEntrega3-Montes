@@ -181,33 +181,6 @@ footer {
   border: 1px solid #ccc;
 }
 
-/* Estilos para la sección de historia */
-#history {
-  padding: 40px;
-  text-align: center;
-  background-color: #f9f9f9;
-}
-
-#history p {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Estilos para la sección de misión, visión y valores */
-#mission-vision-values {
-  padding: 40px;
-  text-align: center;
-}
-
-#mission-vision-values ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#mission-vision-values li {
-  margin: 10px 0;
-}
-
 /* Estilos para la galería de fotos */
 #gallery {
   padding: 40px;
@@ -225,21 +198,6 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-/* Estilos para las certificaciones */
-#certifications {
-  padding: 40px;
-  text-align: center;
-}
-
-#certifications ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-#certifications li {
-  margin: 10px 0;
 }
 
 /* Estilos para las redes sociales */
@@ -312,4 +270,25 @@ footer {
   font-family: "Roboto", sans-serif;
   color: #583a00;
   margin-bottom: 20px;
+}
+
+/* Estilos para el botón flotante de redes sociales */
+.float-button {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  animation: pulse;
+  animation-duration: 1s;
+}
+
+.float-button:hover {
+  animation: pulse;
+  animation-duration: 1s;
+}
+
+.float-icon {
+  width: 60px;
+  height: 60px;
 }/*# sourceMappingURL=styles.css.map */
