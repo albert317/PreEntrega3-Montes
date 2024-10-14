@@ -55,32 +55,14 @@
 }
 
 /* Estilos para los productos */
-#products {
-  padding: 40px;
-  text-align: center;
+#products .card-title {
+  font-family: "Roboto", sans-serif;
+  color: #583a00;
 }
 
-.product-grid {
-  row-gap: 20px;
-}
-
-.product-card {
-  background-color: #f1f1f1;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.product-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-#categories {
-  padding: 40px;
-  background-color: #eee;
-  text-align: center;
+#products .card-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 /* Estilos para los testimonios */
